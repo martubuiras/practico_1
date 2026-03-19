@@ -36,8 +36,11 @@ while attempts > 0:
 
     letter = input("Ingresá una letra: ")
 
-    if len(letter) != 1:
-        print ("Entrada novalida")
+    if len(letter) != 1 or not (
+        (letter >= "a" and letter <= "z") or
+        (letter >= "A" and letter <= "Z")
+    ):
+        print ("Entrada no valida")
         print ()
         continue
   
