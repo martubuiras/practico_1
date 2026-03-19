@@ -36,6 +36,11 @@ while attempts > 0:
 
     letter = input("Ingresá una letra: ")
 
+    if len(letter) != 1:
+        print ("Entrada novalida")
+        print ()
+        continue
+  
     if letter in guessed:
         print("Ya usaste esa letra.")
     elif letter in word:
